@@ -24,7 +24,10 @@ public class Agenda {
             contacts.add(newContact);
         }
     }
-
+    /**
+     * Método que permite borrar un contacto de la agenda a partir de su nombre
+     * @param name Nombre del contacto a borrar
+     */
     public void removeContact(String name) {
         Iterator<Contacto> it = contacts.iterator();
 
@@ -36,7 +39,12 @@ public class Agenda {
             }
         }
     }
-
+    /**
+     * Método que permite modificar el número de teléfono asociado a un contacto
+     * @param name Nombre del contacto al que queremos modificar el número de teléfono
+     * @param oldPhone Numero de teléfono antiguo.
+     * @param newPhone Numero de teléfono nuevo.
+     */
     public void modifyPhoneNumber(String name, String oldPhone, String newPhone) {
         for (Contacto c : contacts) {
             if (c.getName().equalsIgnoreCase(name)) {
