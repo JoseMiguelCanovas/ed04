@@ -2,11 +2,11 @@ package org.example;
 
 import java.util.*;
 
-public class Agenda {
+public class agendaContactos {
 
     private List<Contacto> contacts; // Lista de Contacto
 
-    public Agenda() {
+    public agendaContactos() {
         this.contacts = new ArrayList<>();
     }
 
