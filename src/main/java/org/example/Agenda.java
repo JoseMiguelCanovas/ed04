@@ -3,6 +3,7 @@ package org.example;
 import java.util.*;
 
 public class Agenda {
+
     private List<Contacto> contacts; // Lista de Contacto
 
     public Agenda() {
